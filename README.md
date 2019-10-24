@@ -8,17 +8,17 @@
 rails new -d postgresql -C --skip-coffee --skip-turbolinks --skip-javascript --skip-sprockets --no-rc tester_avec_rspec
 ```
 ||Version|
-| :--- | :---: |
+| :--- | ---: |
 Ruby|2.4.6
 Rails|5.1.7
-guard-rspec|4.7.3
-
 
 ### Gemfile
 
 Gem name|Version
-| :--- | :---: |
+| :--- | ---: |
 rspec-rails|3.8
+guard-rspec|4.7.3
+factory_bot_rails|5.1.1
 
 ## Setup
 > **run:** `rails db:create`
@@ -87,6 +87,21 @@ Finished in 0.00773 seconds (files took 4.37 seconds to load)
 20:30:49 - INFO - rspec guard added to Guardfile, feel free to edit it
 ```
 > **run:** `guard`
+
+> **run:** `rails g | grep factory`
+```shell
+factory_bot:model
+```
+
+> **run:** `rails g factory_bot:model Post`
+```shell
+create  spec/factories/posts.rb
+```
+
+> **run:** `rails g factory_bot:model Comment`
+```shell
+create  spec/factories/comments.rb
+```
 
 ## References
 
