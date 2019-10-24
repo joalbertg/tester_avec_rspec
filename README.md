@@ -127,6 +127,24 @@ invoke  factory_bot
 create    spec/factories/users.rb
 ```
 
+> **run:** `rails g controller Comments`
+```shell
+create  app/controllers/comments_controller.rb
+invoke  erb
+create    app/views/comments
+invoke  rspec
+create    spec/controllers/comments_controller_spec.rb
+invoke  helper
+create    app/helpers/comments_helper.rb
+invoke    rspec
+create      spec/helpers/comments_helper_spec.rb
+invoke  assets
+invoke    js
+create      app/assets/javascripts/comments.js
+invoke    scss
+create      app/assets/stylesheets/comments.scss
+```
+
 ## References
 
 - [Rspec Doc][2]
