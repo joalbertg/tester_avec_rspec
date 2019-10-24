@@ -11,6 +11,8 @@ rails new -d postgresql -C --skip-coffee --skip-turbolinks --skip-javascript --s
 | :--- | :---: |
 Ruby|2.4.6
 Rails|5.1.7
+guard-rspec|4.7.3
+
 
 ### Gemfile
 
@@ -79,4 +81,20 @@ Finished in 0.00773 seconds (files took 4.37 seconds to load)
 2 examples, 0 failures, 2 pending
 ```
 
+> **run:** `guard init rspec`
+```shell
+20:30:49 - INFO - Writing new Guardfile to /Users/user_name/Projects/Rails/tester_avec_rspec/Guardfile
+20:30:49 - INFO - rspec guard added to Guardfile, feel free to edit it
+```
+> **run:** `guard`
+
+## References
+
+- [Rspec Doc][2]
+- [rspec-rails Doc][3]
+- [Better Specs][4]
+
 [1]: https://youtu.be/c9xe9VxkAjI
+[2]: https://rspec.info/
+[3]: https://relishapp.com/rspec/rspec-rails/docs
+[4]: http://www.betterspecs.org/
