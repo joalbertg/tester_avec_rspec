@@ -26,27 +26,27 @@ factory_bot_rails|5.1.1
 > **run:** `rails g rspec:install`
 ```shell
 create  .rspec
-      create  spec
-      create  spec/spec_helper.rb
-      create  spec/rails_helper.rb
+create  spec
+create  spec/spec_helper.rb
+create  spec/rails_helper.rb
 ```
 
 > **run:** `rails g model Post name comments_count:integer`
 ```shell
 invoke  active_record
-      create    db/migrate/20191024004927_create_posts.rb
-      create    app/models/post.rb
-      invoke    rspec
-      create      spec/models/post_spec.rb
+create    db/migrate/20191024004927_create_posts.rb
+create    app/models/post.rb
+invoke    rspec
+create      spec/models/post_spec.rb
 ```
 
 > **run:** `rails g model Comment content post:references`
 ```shell
 invoke  active_record
-      create    db/migrate/20191024005223_create_comments.rb
-      create    app/models/comment.rb
-      invoke    rspec
-      create      spec/models/comment_spec.rb
+create    db/migrate/20191024005223_create_comments.rb
+create    app/models/comment.rb
+invoke    rspec
+create      spec/models/comment_spec.rb
 ```
 
 > **run:** `rails db:migrate`
@@ -103,13 +103,39 @@ create  spec/factories/posts.rb
 create  spec/factories/comments.rb
 ```
 
+> **run:** `rails g | grep rspec`
+```shell
+  rspec:controller
+  rspec:feature
+  rspec:generators
+  rspec:helper
+  rspec:install
+  rspec:integration
+  rspec:job
+  rspec:mailer
+  rspec:model
+  rspec:observer
+  rspec:request
+  rspec:scaffold
+  rspec:system
+  rspec:view
+```
+> **run:** `rails g rspec:model User`
+```shell
+create  spec/models/user_spec.rb
+invoke  factory_bot
+create    spec/factories/users.rb
+```
+
 ## References
 
 - [Rspec Doc][2]
 - [rspec-rails Doc][3]
 - [Better Specs][4]
+- [JSONPlaceholder][5]
 
 [1]: https://youtu.be/c9xe9VxkAjI
 [2]: https://rspec.info/
 [3]: https://relishapp.com/rspec/rspec-rails/docs
 [4]: http://www.betterspecs.org/
+[5]: https://jsonplaceholder.typicode.com/users
